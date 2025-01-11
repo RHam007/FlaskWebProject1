@@ -1,0 +1,17 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+{% for course in courses %}
+    <h1>{{course.title}}</h1>
+    <img src={{course.image_url}} width="500em" alt={{course['title']}}/>
+    <br>
+    <p>Course ID: {{course.id}}</p>
+
+{% endfor %}
+</body>
+</html>
